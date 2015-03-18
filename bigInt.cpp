@@ -7,6 +7,7 @@
 #define buffer vector<int>			//the container used to store our 'limitless' numbers
 using namespace std;
 
+lli bigInt::used = 0;
 bigInt::bigInt()									//default constructor does no additional job
 {
 	sign = 0;	//default positive number

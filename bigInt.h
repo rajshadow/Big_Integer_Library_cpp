@@ -12,7 +12,7 @@ private:
 	buffer num;												//stores the number in the a vector<int>
 public:
 	int sign;												//sign=0 indicates positive number; sign=1 indicates negative number
-	lli used;												//keeps a track of the nuber of times kMult was used
+	static lli used;												//keeps a track of the nuber of times kMult was used
 	bigInt();												//default constructor does no additional job
 	bigInt(lli n, lli base = 10);							//construct object from long long and required base
 	bigInt(buffer &num);									//copy constructor
@@ -46,6 +46,6 @@ public:
 	void set(string &str);									//set number manually using numerical string
 
 	buffer get();											//returns the number contained in current object
-	lli kMultUsage();										//returns the number of times kMult was used
+	static lli kMultUsage();										//returns the number of times kMult was used
 };
 
