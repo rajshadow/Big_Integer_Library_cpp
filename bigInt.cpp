@@ -218,7 +218,7 @@ buffer bigInt::combine(buffer &c, buffer &b, buffer &a, lli m)		//combine the th
 }
 void bigInt::kmult(bigInt a, bigInt b)	//split a multiplication of large numbers into 3 smaller mults and some additions
 {
-	//efficient only for large number (greater than ~200 digits) use normal multiplication is digits in any one number is less than 200
+	//efficient only for large number (greater than ~200 digits) use normal multiplication if digits in any one number is less than 200
 	if (a.num.size()<200 || b.num.size()<200)
 	{
 		mult(a, b);
